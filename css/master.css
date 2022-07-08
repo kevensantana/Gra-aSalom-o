@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  :root {
+  
+    font-size: 62.5%;
+    /* 1rem=10px */
+
+    --titles: #171717;
+    --subTitle: #828282;
+    --cor:  #F7DDFA;
+    --fundo: #FDFDFD;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  body{
+   
+    margin: auto;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.6rem;
+    background: #FDFDFD ;
+
+    letter-spacing: 1px;
+
+    overflow: overlay;
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+  /* position: fixed; */
+ 
+  z-index: 100;
+}
+
+main{
+  width: 85%;
+  margin: auto;
+}

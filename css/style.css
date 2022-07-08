@@ -1,0 +1,406 @@
+
+
+/* ===================== nav =====================   */
+
+header{
+    padding-top: 4rem;
+    width: 85%;
+    margin: auto;
+}
+
+
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+    color: #171717;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    
+    list-style: none;
+    transition: 0.3s;
+}
+
+#menu a{
+    display: block;
+    padding: .5rem;
+    font-size: 1.8rem;
+    color: var(--title);
+    font-weight: bold;
+
+}
+  
+#menu li::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid var(--cor);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#menu li:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* ===================== HOME =====================   */
+
+
+.containerHome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin: auto;
+    height: 90vh;
+    padding-top: 4rem;
+  }
+  
+.home-left {
+
+    margin-left: 3rem;
+    margin-bottom: 10rem;
+
+}
+
+.home-left h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.home-left span{
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
+.home-left p{
+    font-size: 1.8rem;
+    color: var(--subTitle);
+}
+
+
+.home-right img{
+    width: 60rem;   
+}
+
+.btnPrincipal{
+
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 3px 10px 5px;
+    height: 4rem;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+
+    position: relative;
+    transition: 0.3s;
+    color: var(--title);
+}
+
+
+
+.btn-1{
+    background: var(--cor);
+}
+
+.btn-1:hover {
+    opacity: .7;
+}
+
+.btn-2{
+    border: 1px solid #171717;
+}
+
+.btn-2:hover {
+    background: rgb(241, 241, 241);
+}
+
+
+
+/* ===================== Sobre =====================   */
+
+
+
+.containerSobre{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10rem;
+  }
+  
+  .image-perfil { 
+    background: #ccc;
+    width: 20rem;
+    height: 20rem; 
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  
+
+   
+  .descricao{
+    width: 75rem;
+    margin: auto;
+  }
+
+
+
+  .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10rem;
+
+    padding: 5rem 0;
+  }
+
+  .media{
+
+    padding: 1rem;
+  } 
+
+  .icon{
+    width: 7rem;
+    height: 7rem;
+    margin: auto;
+
+    border: 1px solid #171717;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+
+  .media h2{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .media span {
+    cursor: pointer;
+    color: var(--subTitle);
+  }
+
+
+
+/* ===================== PROJETOS =====================   */
+
+#projetos{
+
+    width: 85%;
+    margin: auto;
+
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+}
+
+.cards { 
+    margin-top: 3rem;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-gap: 10px;
+   }
+ 
+   .card {
+
+    width: 30rem;
+    height: 20rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+ 
+    position: relative;
+    z-index: 1;
+
+}
+
+.card img{
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+    width: 30rem;
+    margin-bottom: 1rem;
+    
+
+ }
+
+ #servicos{
+    width: 85%;
+    margin: auto;
+
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+ }
+ #servicos h1{
+    padding-bottom: 3rem;
+
+ }
+
+ .nss{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+ }
+
+ .nss img{
+    width: 50rem;
+    border-radius: .5rem;
+ }
+
+ .right{
+    padding-left: 3rem;
+    padding-top: 3rem;
+    text-align: left;
+ }
+
+.right-two{
+    padding-right: 3rem;
+    padding-top: 3rem;
+    text-align: left;
+}
+
+
+
+ #contato {
+    width: 85%;
+    margin: auto;
+    margin-top:1rem;
+    margin-bottom: 5rem;
+    text-align: center;
+ }
+ 
+ .container-form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ 
+ .form-contato {
+   margin: left;
+   width: 70%;
+   border-radius: 1rem;
+   text-align: center;
+ 
+   margin-top: 3rem;
+   padding: 3rem 0;
+   color: var(--title);
+   border: 2px solid #252525 ;
+ }
+ 
+ .form-contato h2 {
+   font-size: 3rem;
+   font-weight: 800;
+ }
+ 
+ .form-contato span {
+   font-size: 1.3rem;
+   color: var(--subTitle);
+   font-weight: bold;
+ }
+ 
+ .form-input {
+ 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 80%;
+   margin: auto;
+   
+   margin-top: 2.5rem;
+ 
+ }
+ 
+ .form-input input, textarea {
+   background-color: white;
+ 
+   color: var(--title);
+   font-size: 1.4rem;
+ 
+   height: 2rem;
+   margin-bottom: 2rem;
+   padding: 1.8rem 2rem;
+   border-radius: .5rem;
+   border: 1px solid #272727;
+ }
+ 
+ .form-input textarea {
+   height: 12rem;
+   resize: none;
+   overflow-y: hidden;
+ }
+
+
+ .button-form {
+  
+    margin: 0 auto;
+  
+    width: 160px;
+    height: 40px;
+  
+    background-color: var(--cor);
+    border-radius: 9px;
+    border: none;
+    
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+  
+    position: relative;
+  
+    transition: 0.6s;
+  }
+
+
+
+
+
+
+
+
+  footer{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    border-top: 1px solid #171717;
+  }

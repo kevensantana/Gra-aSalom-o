@@ -1,0 +1,244 @@
+/* button mobile  */
+
+#btn-mobile {
+    display: none;
+  }
+  
+  /* Principal */
+  @media (max-width: 880px) {
+  
+      .img-form-right {
+        display: none;
+      }
+  
+      .home-right {
+        display: none;
+      }
+  
+      .projeto p {
+        display: none;
+      }
+  
+    #btn-mobile {
+      display: block;
+      background-color: var(--fundo);
+      border: none;
+      border-top: 3px #171717 solid;
+      padding: 1rem 1.8rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      position: relative;
+      z-index: 100;
+    }
+  
+    #btn-mobile::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-color: #171717;
+      transition: .3s transform;
+    }
+  
+    #btn-mobile:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 50%;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-color: #171717;
+      transition: .3s transform;
+    }
+  
+    #nav {
+      display: none;
+    }
+  
+    #nav.active {
+      display: block;
+  
+      position: absolute;
+      top: 0;
+      right: 1%;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+      background-color: var(--fundo);
+  
+      padding: 6em 2rem 1rem;
+      text-align: center;
+      z-index: 50;
+      margin: 0;
+      font-family: "Inter", sans-serif;
+    }
+  
+    #nav.active #menu {
+      flex-direction: column;
+      animation: show-down .3s forwards;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+  
+    }  
+}
+
+
+
+/* Principal */
+
+@media (max-width: 1020px) {
+   
+
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    body{
+        text-align: center;
+    }
+
+        /* home  */
+
+    .containerHome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        width: 100%;
+        padding-top: 0;
+        margin: 0;
+    }    
+    .home-left{
+        font-size: 1.6rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .home-left span{
+        font-size: 4rem;
+    }
+
+    .btnPrincipal{
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .home-right{
+        display: none;
+    }
+
+    /* sobre  */
+
+    .scroll {
+        width: 100%;
+        left: 0;
+    }
+
+    .container-sobre {
+        padding-top: 0;
+        display: block;
+        width: 85%;
+    }
+    
+    .image-perfil img{
+        height: 220px;
+        margin-bottom: 2rem;
+    }
+
+    .descricao{
+
+        width: 100%;
+        margin: auto;
+    }
+
+    #projetos{
+        width: 100%;
+    }
+
+    .social{
+       flex-direction: column;
+       gap: 0;
+       padding: 3rem;
+    }
+
+    .cards { 
+        margin-top: 3rem;
+    
+        display: grid;
+    
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        grid-gap: 5rem;
+       }
+
+
+    #servicos{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .nss{
+        flex-direction: column;
+      
+    }
+
+    .nss img{
+        width: 100%;
+    }
+
+    .right{
+        padding-left: 1rem;
+    }
+    #servicos h1{
+        padding-bottom: 1rem;
+    }
+
+    .left-two{
+        order: 1;
+    }
+
+    .right-two{
+        padding-right: 0;
+        padding-left: 1rem;
+        order: 2;
+    }
+
+   #contato {
+       width: 100%;
+   }
+
+    .form-contato {
+        width: 85%;
+    }
+
+}
+
+
+@media (max-width: 568px) {
+    .btn {
+        display: none;
+    }
+
+    .contato-bs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 80%;
+        margin: auto;
+    }
+
+    .redes img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+}
